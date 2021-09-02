@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="/Style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="music_container">
+            <h2 id="title">Blue Eyes</h2>
+            <h3 id="artist">Honey Singh</h3>
+            <div class="img">
+                <img src="/images/Blue Eyes.JPG" alt="">
+            </div>
+            <audio src="/music/Blue Eyes.mp3.mp3"></audio>
+
+            <!-- Progress bar -->
+
+            <div class="progbar_container" id="prog_container">
+                <div class="prog_duration">
+                    <div id="current"> 0:00</div>
+                    <div id="duration">3:41</div>
+                </div>
+                <div class="prog_div" id="prog_div">
+
+                    <div class="progress" id="progress"></div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <div class="music_controls">
+                <i class="fas fa-backward" id="previ" title="Previous"></i>
+                <i class="fas fa-play" id="play" title="Play"></i>
+                <i class="fas fa-forward" id="next" title="Next"></i>
+            </div>
+        </div>
+        <h1 class="credit">Created by <a href="#">Chaitanya Pawar</a> &copy; Copyright @2021 </h1>
+    </div>
+    </div>
+    <script src="/logic.js">
+    </script>
+</body>
+</html>
